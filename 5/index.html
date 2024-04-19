@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코드분석 디자인 모작</title>
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'TTHakgyoansimYeohaengR';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimYeohaengR.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        body {
+            font-family: 'Pretendard-Regular';
+            line-height: 1;
+            color: #333;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 40px;
+            
+        }
+        .title h1 {
+            font-family: 'TTHakgyoansimYeohaengR';
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .title p {
+            font-size: 20px;
+        }
+
+        .section-01 {
+            padding: 150px 0;
+            background-color: #FF8067;
+            color: #fff;
+        }
+        
+        .section-01 .item_wrap {
+            width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-01 .item_wrap .item {
+            width: 299px;
+        }
+        .section-01 .item_wrap .item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 200px 200px 0 0;
+        }
+        .section-01 .item_wrap .item div {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .section-01 .item_wrap .item div h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        .section-01 .item_wrap .item div  p {
+            
+        }
+        .section-01 .item_wrap .item div a {
+            margin-top: 30px;
+            display: block;
+            border: 1px solid #fff;
+            padding: 15px 0;
+        }
+
+        .section-02 {
+            padding: 150px 0;
+            background-color: #94b5f1;
+        }
+        .section-02 .item_wrap {
+            width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-02 .item_wrap .item {
+            width: 408px;
+        }
+        .section-02 .item_wrap .item div {
+            background-color: #fff;
+            padding: 30px;
+        }
+        .section-02 .item_wrap .item div h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            font-weight: normal;
+        }
+        .section-02 .item_wrap .item div strong {
+            font-size: 20px;
+        }
+        .section-02 .item_wrap .item img {
+            width: 100%;
+            height: 408px;
+            object-fit: cover;
+            display: block;
+        }
+        .section-02 .item_wrap .item a {
+            background-color: #E6FF97;
+            display: block;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 7px;
+        }
+
+        .section-03 {
+            width: 1280px;
+            margin: 150px auto;
+            
+        }
+        .section-03 .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-03 .item .item-info {
+            width: 517px;
+        }
+        .section-03 .item .item-info .title {
+            text-align: left;
+        }
+        .section-03 .item .item-info .title p {
+            line-height: 1.3;
+        }
+        .section-03 .item .item-info a {
+            width: 250px;
+            border: 1px solid #333;
+            display: block;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .section-03 .item img {
+            width: 735px;
+            height: 735px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- https://brownhaus.co.kr/ -->
+    <div class="section-01">
+        <div class="title">
+            <h1>Fashion Brand Sale</h1>
+            <p>봄 패션 브랜드 세일</p>
+        </div><!-- title end -->
+        <div class="item_wrap">
+            <div class="item"> 
+                <img src="img/베테제.jpg" alt="">
+                <div>
+                    <h2>실패없는 MTM & BAG <b>베테제</b></h2>
+                    <P>꾸안구의 정석</P>
+                    <a href="#">BRAND NOW</a>
+                </div> 
+            </div><!-- .item end -->
+
+            <div class="item"> 
+                <img src="img/촘촘.jpg" alt="">
+                <div>
+                    <h2>따뜻한 동화감성 <b>촘촘</b></h2>
+                    <P>핸드메이드 비건 브랜드</P>
+                    <a href="#">BRAND NOW</a>
+                </div> 
+            </div><!-- .item end -->
+
+            <div class="item"> 
+                <img src="img/얀13.jpg" alt="">
+                <div>
+                    <h2>봄을 알리는 스프링컬렉션 <b>얀13</b></h2>
+                    <P>디테일이 다른 디자인</P>
+                    <a href="#">BRAND NOW</a>
+                </div> 
+            </div><!-- .item end -->
+
+            <div class="item"> 
+                <img src="img/핸드메이드.jpg" alt="">
+                <div>
+                    <h2>꽃구경 대신 꽃착용! <b>다나버튼</b></h2>
+                    <P>아이돌 귀걸이가 궁금하다면?</P>
+                    <a href="#">BRAND NOW</a>
+                </div> 
+            </div><!-- .item end -->
+        </div><!-- .item_wrap end -->
+    </div><!-- .section-01 end -->
+
+    <div class="section-02">
+        <div class="title">
+            <h1>Today's Brand</h1>
+            <p>오늘의 브랜드 특가</p>
+        </div><!-- title end -->
+        <div class="item_wrap">
+            <div class="item">
+                <div>
+                    <h2>자동 거품 손 세정기 + 핸드워시 3EA</h2>
+                    <strong>26,900</strong>
+                </div>
+                <img src="img/손세정기.webp" alt="">
+                <a href="#">BUY NOW</a>
+            </div><!-- .item end -->
+
+            <div class="item">
+                <div>
+                    <h2>화알못 생활 청산!<br />
+                    5단계 뷰티라이트 LED 거울</h2>
+                    <strong>24,900</strong>
+                </div>
+                <img src="img/거울.jpg" alt="">
+                <a href="#">BUY NOW</a>
+            </div><!-- .item end -->
+
+            <div class="item">
+                <div>
+                    <h2>고속무선충전 보조배터리 10,000MAH</h2>
+                    <strong>34,900</strong>
+                </div>
+                <img src="img/보조배터리.jpg" alt="">
+                <a href="#">BUY NOW</a>
+            </div><!-- .item end -->
+        </div><!-- item_wrap end -->
+    </div><!-- section-02 end -->
+
+    <div class="section-03">
+        <div class="item">
+            <div class="item-info">
+                <div class="title">
+                    <h1>OOOWA</h1>
+                    <P>일상 혹은 여행 속에서 느낄 수 있는<br />
+                    많은 감정과 사물을 주얼리로<br />
+                                표현하는 오오와</P>
+                </div>
+            <a href="#">GO SHOP</a>
+            </div><!-- item-info end -->
+            <img src="img/오오와.jpeg" alt="">
+        </div><!-- .item end -->
+    </div><!-- section-03 end -->
+</body>
+</html>
